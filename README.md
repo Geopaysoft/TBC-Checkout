@@ -85,7 +85,7 @@ Response Types
 
 
 
-#### execution
+#### Execution
 
 See [execution.php](examples/execution.php).
 
@@ -121,7 +121,7 @@ Response Types
 200: OK
 
 
-#### delete
+#### Delete
 
 See [delete.php](examples/delete.php).
 
