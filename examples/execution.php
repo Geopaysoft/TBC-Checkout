@@ -1,9 +1,9 @@
 <?php
 /*
-* This file is part of the TBCCheckout project.
+* This file is part of the TBC-Checkout project.
 *
 * Detailed instructions can be found in README.md or online
-* @link https://github.com/Geopaysoft/TBCCheckout
+* @link https://github.com/Geopaysoft/TBC-Checkout
 *
 * @author geopaysoft.com  <info@geopaysoft.com>
 * @license   https://opensource.org/licenses/MIT

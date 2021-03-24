@@ -1,9 +1,9 @@
 <?php
 /*
-* This file is part of the Tpay project.
+* This file is part of the TBC-Checkout project.
 *
 * Detailed instructions can be found in README.md or online
-* @link https://github.com/Geopaysoft/Tpay
+* @link https://github.com/Geopaysoft/TBC-Checkout
 *
 * @author geopaysoft.com  <info@geopaysoft.com>
 * @license   https://opensource.org/licenses/MIT
@@ -47,10 +47,10 @@ private  $apikey;
 public $error = NULL;
 
 /**
-* Tpay constructor.
+* TBCCheckout constructor.
 *
-* @param number client_id     - Tpay client id (Merchant Id registered in Tpay system).
-* @param string client_secret - Tpay client secret for accessing Tpay resources.
+* @param number client_id     - client id (Merchant Id registered in TBC-Checkout system).
+* @param string client_secret - client secret for accessing TBC-Checkout resources.
 * @param string apiKey        - TBC Open Api Key, Generated on developers.tbcbank.ge.
 * @param bool   debug         - Debug Mode default false.
 */
@@ -135,7 +135,7 @@ private function Request($URL,$data){
 
 /*
 * Request returns payment status and details for given payment-id.
-* @param string $paymentid tpay payment identifier
+* @param string $paymentid TBC-Checkout payment identifier
 * @return ServiceResponse
 */
 public function GetPaymentInfo($paymentid){
@@ -168,7 +168,7 @@ public function GetPaymentInfo($paymentid){
 }
 
 /*
-* Request initiates Tpay web payment. The response contains payment object details and links for a) checking payment status and b) redirecting user to finish initiated payment.
+* Request initiates TBC-Checkout web payment. The response contains payment object details and links for a) checking payment status and b) redirecting user to finish initiated payment.
 * @param array $param
 * @return ServiceResponse
 */
@@ -180,7 +180,7 @@ public function RequestPayment($param){
 
 /**
 * Request completes authorization process for payment with given payment_id. 
-* @param string $paymentid tpay payment identifier
+* @param string $paymentid TBC-Checkout payment identifier
 * @param number $amount amount to be confirmed (should not exceed transaction amount). if confirmed amount is less than the original transaction amount, difference is automatically returned to the customer.
 * @return ServiceResponse
 */
@@ -192,7 +192,7 @@ public function CompletionPayment($paymentid,$amount){
 
 /**
 * Request cancels payment for given payment_id.
-* @param string $paymentid tpay payment identifier
+* @param string $paymentid TBC-Checkout payment identifier
 * @param number $amount amount to be returned (should not exceed transaction amount)
 * @return ServiceResponse
 */
