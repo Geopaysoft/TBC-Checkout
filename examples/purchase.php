@@ -58,12 +58,12 @@ $param= [
         /*
         Callback url to redirect user after finishing payment
         */
-        'returnurl'=>'http://localhost/examples/',
+        'returnurl'=>'http://localhost:8000/examples/',
         
         /*
         Merchant callbackURL - when payment status changes
         */
-        'callbackUrl'=>'http://localhost/examples/callbackUrl.php', 
+        'callbackUrl'=>'http://localhost:8000/examples/callbackUrl.php', 
         
         /*
         Specify if preauthorization is needed for the transaction. 
