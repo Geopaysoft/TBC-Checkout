@@ -23,7 +23,6 @@ class TBCCheckout {
 /**
  * @var Endpoint Addresses
 */
-
 const URL  = 'https://api.tbcbank.ge/v1/tpay/';
 
 /**
