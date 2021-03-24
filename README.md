@@ -115,7 +115,7 @@ Array
 )
 ```
 
-Response will be instance of `DeletePayment`. 
+Response will be instance of `ExecutionPayment`. 
 Response Types
 200: OK
 
@@ -133,7 +133,7 @@ Array(
 )
 ```
 
-Response will be instance of `deletePayment`. 
+Response will be instance of `DeletePayment`. 
 Response Types
 200: OK
 
