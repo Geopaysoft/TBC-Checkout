@@ -7,6 +7,7 @@ $TBCCheckout = new TBCCheckout(client_id,client_secret,apikey,debug);
 ```
 
 client_id and client_secret
+
 In order to execute TBC Checkout Services, requestor must be registered as a TBC Checkout merchant in bank. 
 Details regarding registration can be found at https://tbcpayments.ge/details/ecom/tbc
 
