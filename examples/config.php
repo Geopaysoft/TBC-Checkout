@@ -35,7 +35,7 @@ define('APIKEY', 'apikey');
 
 
 /*
-*enable or disable debugger information
+* Debug Information  true enable / false disable
 */
 
 define('DEBUG', TRUE);

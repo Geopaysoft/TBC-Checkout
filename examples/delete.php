@@ -25,7 +25,7 @@ if (DEBUG && !empty($TBCCheckout->error))
 echo $TBCCheckout->error;
 
 
-$res = $TBCCheckout->deletePayment('E95011edFFFc4D4E81C936493bD154B7');
+$res = $TBCCheckout->DeletePayment('E95011edFFFc4D4E81C936493bD154B7');
 
 
 /*

@@ -219,7 +219,7 @@ public function CancelPayment($paymentid,$amount){
 * @param string $rec_id recurring payment identifier
 * @return ServiceResponse
 */
-public function deletePayment($rec_id){
+public function DeletePayment($rec_id){
 
  return $this->Request(self::URL.'payments/'.$rec_id.'/delete',[]);
 
