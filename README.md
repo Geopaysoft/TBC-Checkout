@@ -45,10 +45,10 @@ Then open `http://localhost:8000/examples/savecard.php` in browser.
 
 #### Get Payment Info
 
-See [completion.php](examples/completion.php).
+See [paymentinfo.php](examples/paymentinfo.php).
 
 ```bash
-$ php examples/completion.php 
+$ php examples/paymentinfo.php 
 Array
 (
 [payId] => iffv0yv*****11839
