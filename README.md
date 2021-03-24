@@ -50,7 +50,8 @@ See [completion.php](examples/completion.php).
 
 ```bash
 $ php examples/completion.php 
-Array(
+Array
+(
 [status] => Succeeded
 [amount] => 10
 [confirmedAmount] => 10
@@ -71,7 +72,8 @@ See [cancel.php](examples/cancel.php).
 
 ```bash
 $ php examples/cancel.php 
-Array(
+Array
+(
 [httpStatusCode] => 200
 [developerMessage] =>
 [userMessage] =>
@@ -126,7 +128,8 @@ See [delete.php](examples/delete.php).
 
 ```bash
 $ php examples/delete.php 
-Array(
+Array
+(
 [httpStatusCode] => 200
 [developerMessage] =>
 [userMessage] =>
@@ -136,4 +139,3 @@ Array(
 Response will be instance of `DeletePayment`. 
 Response Types
 200: OK
-
