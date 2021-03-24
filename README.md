@@ -7,6 +7,7 @@ Methods for integrating TBC Checkout - card and QR payments for e-commerce merch
 - [How to use](#how-to-use)
 - [Purchase Form](#purchase-form)
 - [Savecard Form](#savecard-form)
+- [Get Payment Info](#getpaymentinfo)
 - [Completion](#completion)
 - [Cancel](#cancel)
 - [Execution](#execution)
@@ -41,6 +42,36 @@ $ php -S localhost:8000
 ```
 
 Then open `http://localhost:8000/examples/savecard.php` in browser.
+
+#### Get Payment Info
+
+See [completion.php](examples/completion.php).
+
+```bash
+$ php examples/completion.php 
+Array
+(
+[payId] => iffv0yv*****11839
+[status] => WaitingConfirm
+[currency] => GEL
+[amount] => 0.01
+[confirmedAmount] => 0
+[returnedAmount] => 0
+[links] =>
+[transactionId] => 773B12D3202570B*****46AD40BDB890
+[paymentMethod] => 4
+[preAuth] => 1
+[recurringCard] =>
+[httpStatusCode] => 200
+[developerMessage] =>
+[userMessage] =>
+
+)
+```
+
+Response will be instance of `GetPaymentInfo`. 
+Response Types
+200: OK
 
 
 
