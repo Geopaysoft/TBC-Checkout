@@ -15,7 +15,7 @@
 namespace Geopaysoft\TBCCheckout;
 
 /**
- * Class Tpay
+ * Class TBCCheckout
 */
 
 class TBCCheckout {
