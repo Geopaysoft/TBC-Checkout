@@ -7,7 +7,7 @@ Methods for integrating TBC Checkout - card and QR payments for e-commerce merch
 - [How to use](#how-to-use)
 - [Purchase Form](#purchase-form)
 - [Savecard Form](#savecard-form)
-- [Get Payment Info](#getpaymentinfo)
+- [Get Payment Info](#get-payment-info)
 - [Completion](#completion)
 - [Cancel](#cancel)
 - [Execution](#execution)
