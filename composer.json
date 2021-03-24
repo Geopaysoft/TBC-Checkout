@@ -2,6 +2,7 @@
     "name": "Geopaysoft/TBC-Checkout",
     "description": "Methods for integrating TBC Checkout - card and QR payments for e-commerce merchants",
     "license": "MIT",
+    "type": "library",
         "authors": [
                     {
                     "name": "Geopay LTD",
@@ -10,10 +11,12 @@
                    ],
         "require": {
                     "php": ">=5.4.0"
+                    "ext-json": "*",
+                    "anlutro/curl": "^1.4"
                    },
         "autoload": {
-                     "psr-0": {
-                     "Geopaysoft\\TBCCheckout\\": "src/"
+                     "psr-4": {
+                     "Geopaysoft\\TBC-Checkout\\": "src/"
                      }
                     }
 }
