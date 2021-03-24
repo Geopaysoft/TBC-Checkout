@@ -1,5 +1,6 @@
 # TBC Checkout
-Tbc bank payment system [TBCCheckout](https://developers.tbcbank.ge/docs/tpay---web-payments/1/overview).
+
+Methods for integrating TBC Checkout - card and QR payments for e-commerce merchants [TBCCheckout](https://developers.tbcbank.ge/docs/tpay---web-payments/1/overview).
 
 ### Creating object
 ```php
