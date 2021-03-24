@@ -1,5 +1,5 @@
 {
-    "name": "Geopaysoft/TBCCheckout-php",
+    "name": "Geopaysoft/TBC-Checkout",
     "description": "Methods for integrating TBC Checkout - card and QR payments for e-commerce merchants",
     "license": "MIT",
         "authors": [

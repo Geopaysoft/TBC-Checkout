@@ -19,3 +19,6 @@ All requests to Open API platform should contain apikey  parameter with correspo
 to verify registered developer app and grant general  access to Open API platform. To get your API key, follow instructions at https://developers.tbcbank.ge/get-started
 
 
+debug 
+
+Debug Information  true enable / false disable
