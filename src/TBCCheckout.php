@@ -238,6 +238,6 @@ public function ExecutionPayment($param){
 }
 
 
-} // End off  Tpay class
+} // End off class
 
 ?>
