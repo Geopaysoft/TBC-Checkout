@@ -12,7 +12,6 @@
 * file that was distributed with this source code.
 */
 
-
 namespace Geopaysoft\TBCCheckout;
 
 require dirname(__FILE__) . '/config.php';
@@ -48,7 +47,6 @@ print_r($res);
 
 if (isset($res['status']))
 echo 'Status: ' . $res['status'] . PHP_EOL;
-
 
 
 if (DEBUG && !empty($TBCCheckout->error))

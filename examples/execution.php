@@ -12,7 +12,6 @@
 * file that was distributed with this source code.
 */
 
-
 namespace Geopaysoft\TBCCheckout;
 
 require dirname(__FILE__) . '/config.php';
@@ -34,10 +33,7 @@ $param = [
         'preAuth'=>false          
        ];
 
-
-
 $res = $TBCCheckout->ExecutionPayment($param);
-
 
 /*
 Result example
@@ -78,7 +74,5 @@ echo 'Status: ' . $res['status'] . PHP_EOL;
 
 if (DEBUG && !empty($TBCCheckout->error))
 echo $TBCCheckout->error;
-
-
 
 ?>

@@ -37,18 +37,13 @@ Array(
 )
 */
 
-
 if (DEBUG)
 print_r($res);
 
 if (isset($res['httpStatusCode']))
 echo 'Status: ' . $res['httpStatusCode'] . PHP_EOL;
 
-
-
 if (DEBUG && !empty($TBCCheckout->error))
 echo $TBCCheckout->error;
-
-
 
 ?>

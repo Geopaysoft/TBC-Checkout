@@ -12,7 +12,6 @@
 * file that was distributed with this source code.
 */
 
-
 namespace Geopaysoft\TBCCheckout;
 
 require dirname(__FILE__) . '/config.php';
@@ -23,7 +22,6 @@ $TBCCheckout = new TBCCheckout(CLIEND_ID,CLIENT_SECRET,APIKEY,DEBUG);
 
 if (DEBUG && !empty($TBCCheckout->error))
 echo $TBCCheckout->error;
-
 
 $res = $TBCCheckout->DeletePayment('E95011edFFFc4D4E81C936493bD154B7');
 
@@ -50,6 +48,5 @@ echo 'Status: ' . $res['httpStatusCode'] . PHP_EOL;
 
 if (DEBUG && !empty($TBCCheckout->error))
 echo $TBCCheckout->error;
-
 
 ?>

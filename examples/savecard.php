@@ -12,7 +12,6 @@
 * file that was distributed with this source code.
 */
 
-
 namespace Geopaysoft\TBCCheckout;
 
 require dirname(__FILE__) . '/config.php';
@@ -22,7 +21,6 @@ $TBCCheckout = new TBCCheckout(CLIEND_ID,CLIENT_SECRET,APIKEY,DEBUG);
 
 if (DEBUG && !empty($TBCCheckout->error))
 echo $TBCCheckout->error;
-
 
 $param= [
         'amount'=>[
@@ -99,7 +97,5 @@ Redirect payment page
 */
 header('Location: '.$res['links'][1]['uri']);
 exit;
-
-
 
 ?>
