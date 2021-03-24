@@ -31,25 +31,20 @@ const URL  = 'https://api.tbcbank.ge/v1/tpay/';
 */
 private  $access_token = NULL;
 
-
 /**
  * @var bool Debug Mode
 */
 private  $debug = FALSE;
-
 
 /**
  * @var string TBC Open Api Key
 */
 private  $apikey;
 
-
 /**
  * @var string Error status property
 */
 public $error = NULL;
-
-
 
 /**
 * Tpay constructor.
@@ -102,7 +97,6 @@ public function __construct($client_id,$client_secret,$apiKey,$debug=FALSE){
 * @return ServiceResponse
 */
 private function Request($URL,$data){
-
  if (!is_array($data)){
      $this->error='Error in data structure';
      return false;
@@ -119,7 +113,6 @@ private function Request($URL,$data){
     curl_setopt($curl, CURLOPT_URL, $URL);
             
     $res = curl_exec($curl);
-  
   
     if($res === FALSE){
       $this->error=curl_error($curl);
@@ -157,7 +150,6 @@ public function GetPaymentInfo($paymentid){
             
     $res = curl_exec($curl);
   
-  
     if($res === FALSE){
       $this->error=curl_error($curl);
       curl_close($curl);
@@ -175,7 +167,6 @@ public function GetPaymentInfo($paymentid){
   return $res_object;
 }
 
-
 /*
 * Request initiates Tpay web payment. The response contains payment object details and links for a) checking payment status and b) redirecting user to finish initiated payment.
 * @param array $param
@@ -186,7 +177,6 @@ public function RequestPayment($param){
  return $this->Request(self::URL.'payments',$param);
 
 }
-
 
 /**
 * Request completes authorization process for payment with given payment_id. 
@@ -200,7 +190,6 @@ public function CompletionPayment($paymentid,$amount){
 
 }
 
-
 /**
 * Request cancels payment for given payment_id.
 * @param string $paymentid tpay payment identifier
@@ -213,7 +202,6 @@ public function CancelPayment($paymentid,$amount){
 
 }
 
-
 /**
 * Request deletes recurring payment for given rec_id.
 * @param string $rec_id recurring payment identifier
@@ -225,7 +213,6 @@ public function DeletePayment($rec_id){
 
 }
 
-
 /**
 * Request initiates recurring payment.
 * @param array $param
@@ -236,7 +223,6 @@ public function ExecutionPayment($param){
  return $this->Request(self::URL.'payments/execution',$param);
 
 }
-
 
 } // End off class
 
