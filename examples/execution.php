@@ -28,7 +28,7 @@ $param = [
         'merchanTBCCheckoutmentId'=>'123456',
         'money'=>[
 	            'currency'=>'GEL',
-	            'amount'=>10,
+	            'amount'=>0.02,
                   ],
         'preAuth'=>false          
        ];
