@@ -60,7 +60,7 @@ $param= [
         /*
         Merchant callbackURL - when payment status changes
         */
-        'callbackurl'=>'http://localhost:8000/examples/callbackUrl.php', 
+        'callbackUrl'=>'http://localhost:8000/examples/callbackUrl.php', 
         
         /*
         Specify if preauthorization is needed for the transaction. 
