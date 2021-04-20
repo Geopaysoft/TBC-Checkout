@@ -22,7 +22,7 @@ if (isset($_REQUEST['PaymentId'])){
 
 $TBCCheckout = new TBCCheckout(CLIEND_ID,CLIENT_SECRET,APIKEY,DEBUG);
 
- $res = $TBCCheckout->GeTBCCheckoutmentInfo($_REQUEST['PaymentId']);
+ $res = $TBCCheckout->GetPaymentInfo($_REQUEST['PaymentId']);
  
  if ($res['status']=='Created'){
     // Activate  payment status in  your system
