@@ -17,8 +17,10 @@ namespace Geopaysoft\TBCCheckout;
 
 require dirname(__FILE__) . '/../src/TBCCheckout.php';
 
+$postdata = file_get_contents("php://input");
+$data=json_decode($postdata,true);
 
-if (isset($_REQUEST['PaymentId'])){
+if (isset($data['PaymentId'])){
 
 $TBCCheckout = new TBCCheckout(CLIEND_ID,CLIENT_SECRET,APIKEY,DEBUG);
 
