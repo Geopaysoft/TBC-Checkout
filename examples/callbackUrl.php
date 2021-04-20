@@ -30,7 +30,6 @@ $TBCCheckout = new TBCCheckout(CLIEND_ID,CLIENT_SECRET,APIKEY,DEBUG);
     exit;
  }
 
-
  if ($res['status']=='Succeeded'){
    // Activate  payment status in  your system
     header("HTTP/1.1 200 OK"); 
