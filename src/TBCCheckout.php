@@ -12,6 +12,11 @@
 * file that was distributed with this source code.
 */
 
+if (version_compare(phpversion(), '7.1', '>=')) {
+ini_set( 'precision', 17 );
+ini_set( 'serialize_precision', -1 );
+}
+
 namespace Geopaysoft\TBCCheckout;
 
 /**
