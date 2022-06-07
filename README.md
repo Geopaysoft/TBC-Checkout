@@ -3,7 +3,7 @@
 Methods for integrating TBC Checkout - card and QR payments for e-commerce merchants 
 ## Table Of Contents
 
-- [TBC-Checkout documentation](https://developers.tbcbank.ge/docs/tpay---web-payments/1/overview)
+- [TBC-Checkout documentation](https://developers.tbcbank.ge/docs/checkout-overview)
 - [How to use](#how-to-use)
 - [Purchase Form](#purchase-form)
 - [Savecard Form](#savecard-form)
